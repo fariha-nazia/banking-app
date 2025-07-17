@@ -39,12 +39,12 @@
                                     <div class="card-body">
                                       <fieldset class="fieldset">
                                         <label class="label">Phone Number</label>
-                                        <input type="text" class="input" placeholder="Phone Number" />
+                                        <input type="text" class="input" placeholder="Please Type 4991" id="login-phone-number"/>
 
                                         <label class="label">Pin</label>
-                                        <input type="password" class="input" placeholder="Password" />
+                                        <input type="password" class="input" placeholder="Please Type 1111" autocomplete="off" id="login-pin"/>
                                         <div><a class="link link-hover">Forgot password?</a></div>
-                                        <button class="btn btn-neutral mt-4">Login</button>
+                                        <button class="btn btn-neutral mt-4" id="login-btn">Login</button>
                                       </fieldset>
                                     </div>
                                   </div>
@@ -60,5 +60,9 @@
 
     </main>
     
+
+
+    <!-- Connecting all the JS files -->
+    <script src="js/login.js"></script>
 </body>
 </html>
