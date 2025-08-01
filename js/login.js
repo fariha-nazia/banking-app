@@ -4,7 +4,7 @@
 // Step 1
 // by this line of code you are calling the ID from document and making changes. This an example o0f DOM manipulation. 
     document.getElementById('login-btn').addEventListener('click', function(){
-    console.log('login btn clicked');
+    // console.log('login btn clicked');
 
     // step 2
     // adding eventlistener to the phone number so that it fetches the phone number.
@@ -15,7 +15,7 @@
     const loginPin = document.getElementById('login-pin').value;
 
     // to check the output when btn clicked
-    console.log(loginPhoneNumber,loginPin);
+    // console.log(loginPhoneNumber,loginPin);
 
     // Step 4 - validation of phone and pin number.
     // setting the phone num and pass - this way is temporary and not at all a good way.
