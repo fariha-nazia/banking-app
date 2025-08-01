@@ -38,14 +38,14 @@
 
                       <!-- Buttons for cash out and add money -->
                     <div>
-                        <button class="btn">Add Money</button>
-                        <button class="btn">Cash Out</button>
+                        <button id="toggle-add-money-form" class="btn">Add Money</button>
+                        <button id="toggle-cash-out-form" class="btn">Cash Out</button>
                         <button class="btn">Pay Bill</button>
                     </div>
                       
 
                       <!-- Add money -->
-                      <div class="hidden">
+                      <div class="" id="add-money-form">
                         <div class="hero bg-base-200 mt-10">
                             <div class="hero-content">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -65,7 +65,8 @@
                       <!-- End add money -->
 
                       <!-- Cash out -->
-                      <div>
+                       <!-- by default we will alway see the Add money form and not the cash out, that's why I amm adding hidden in cash out div. -->
+                      <div class="hidden" id="cash-out-form"> 
                         <div class="hero bg-base-200 mt-10">
                             <div class="hero-content">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -95,9 +96,8 @@
 
 
     <!-- Connecting all the JS files -->
-    <!-- <script src="js/login.js"></script> -->
-    <!-- <script src="js/home.js"></script> -->
      <script src="js/addMoney.js"></script>
      <script src="js/cashOut.js"></script>
+     <script src="js/features.js"></script>
 </body>
 </html>
