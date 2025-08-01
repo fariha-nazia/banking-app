@@ -2,11 +2,11 @@
 * Task: You want to add an amount to the current balance and display the updated balance.
 * Steps:
 * 1. Put Id so that we can call 
-* 2. Build the function so that it performs certain task.
-* 3. add event listener.
+* 2. Build the function so that it performs certain task
+* 3. add event listener
 * 4. fetch the value
 * 5. do validation
-* 6. display the updated value
+* 6. display the updated value / Update the UI
 
 How the sequence works:
 1st. You will add a event listener
@@ -15,7 +15,7 @@ How the sequence works:
 3rd. Take the input amount from the user
 4th. if the pin is correct then convert the value (which we took from user) in parsFloat
 5th. Add the value (Addition)
-6th. Display the value
+6th. Display the value / Update the UI
 */
 
 // adding the event listener
