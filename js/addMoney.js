@@ -18,6 +18,55 @@ How the sequence works:
 6th. Display the value / Update the UI
 */
 
+
+
+
+// =======================================================================================================================
+/** Task: You want to add an amount to the current balance and display the updated balance.
+ ** Optimized Part: We will optimize the code such a way that it can fetch the input of amount from user. 
+ ** Steps:
+ * 1. You will add a event listener
+      Add event listener in the btn
+ * 2. Build a function to fetch Amount from user. -- check utilities.js for the function.
+ * 
+ *  */
+// =======================================================================================================================
+// console.log('add money is working');
+document.getElementById('add-money-btn').addEventListener('click', function(event){
+    event.preventDefault();
+    // console.log('btn is clicked and working');
+
+    // calling the function
+    const addMoneyInput = getInputFieldValueById('add-money-input');
+    const addMoneyInputPin = getInputFieldValueById('add-money-pin-input');
+    console.log(addMoneyInput, addMoneyInputPin);
+
+    if(addMoneyInputPin === 1111){
+
+        // fetching the current balance by calling it
+        const balance = getTextFieldValueById('account-balance')
+        
+        // doing the addition
+        const newBalance = balance + addMoneyInput;
+
+        // setting the new balance in UI
+        document.getElementById('account-balance').innerText = newBalance;
+    }
+    else{
+        alert('Please use PIN 1111');
+    }
+
+
+});
+
+
+// =======================================================================================================================
+// =======================================================================================================================
+
+
+
+
+/* 
 // adding the event listener
 document.getElementById('add-money-btn').addEventListener('click', function(event){
     event.preventDefault();
@@ -52,5 +101,5 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
         alert('Please Try Pin 1111');
     }
 });
-
+*/
 

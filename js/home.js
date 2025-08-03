@@ -1,3 +1,4 @@
+/**
 console.log('home js connected');
 
 // Add money
@@ -42,3 +43,4 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
         alert('Please input 1111 in Pin');
     }
 });
+ */ 
