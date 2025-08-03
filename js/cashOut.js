@@ -13,7 +13,43 @@
 
 // =======================================================================================================================
 // =======================================================================================================================
+document.getElementById('cash-out-btn').addEventListener('click', function(event){
+    event.preventDefault();
 
+    const cashOut = getInputFieldValueById('cash-out-input');
+    const cashOutPin = getInputFieldValueById('cash-out-pin-input');
+    console.log(cashOut, cashOutPin);
+
+    if(isNaN(cashOut)){
+        alert('Please input a number');
+        return;
+    }
+
+    if(cashOutPin === 1111){
+
+        const balance = getTextFieldValueById('account-balance');
+
+        // if cash out amount more than account balance
+        if(cashOut > balance){
+            alert('You do not have enough money')
+            return;
+        }
+
+        const newBalance = balance - cashOut;
+
+        document.getElementById('account-balance').innerText = newBalance;
+
+        // add to transaction history
+        const div = document.createElement('div');
+        div.innerHTML = `
+            <h4>Cash Out ${cashOut}. New Balance ${newBalance}</h4>
+        `;
+        document.getElementById('transaction-history-box').appendChild(div);
+    }
+    else{
+        alert('Please try PIN 1111')
+    }
+});
 
 
 // =======================================================================================================================

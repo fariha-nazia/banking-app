@@ -41,6 +41,12 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     const addMoneyInputPin = getInputFieldValueById('add-money-pin-input');
     console.log(addMoneyInput, addMoneyInputPin);
 
+    // if not a number then give alert
+    if(isNaN(addMoneyInput)){
+        alert('Please input a number');
+        return;
+    }
+
     if(addMoneyInputPin === 1111){
 
         // fetching the current balance by calling it
@@ -51,6 +57,14 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
 
         // setting the new balance in UI
         document.getElementById('account-balance').innerText = newBalance;
+
+        //  add to transaction history
+        const p = document.createElement('p');
+        p.innerText = `Added: ${addMoneyInput} Euro. New Balance: ${newBalance} Euro`;
+        console.log(p);
+
+        //  ====
+        document.getElementById('transaction-history-box').appendChild(p);
     }
     else{
         alert('Please use PIN 1111');

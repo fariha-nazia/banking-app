@@ -9,7 +9,7 @@ function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputValueNumber = parseFloat(inputValue);
     return inputValueNumber;
-}
+};
 
 
 /**
@@ -21,4 +21,20 @@ function getTextFieldValueById(id){
     const textValue = document.getElementById(id).innerText;
     const textValueNumber = parseFloat(textValue);
     return textValueNumber;
-}
+};
+
+/**
+ * this function will show the section when clicked in certain btn.
+  */
+
+function showSectionById(id){
+
+    // Step 1: Hide all the sections
+    document.getElementById('add-money-form').classList.add('hidden');
+    document.getElementById('cash-out-form').classList.add('hidden');
+    document.getElementById('transaction-form').classList.add('hidden');
+
+    // Step 2: show the section when the ID is called.
+    document.getElementById(id).classList.remove('hidden');
+
+};

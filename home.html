@@ -42,12 +42,12 @@
                     <div>
                         <button id="toggle-add-money-form" class="btn">Add Money</button>
                         <button id="toggle-cash-out-form" class="btn">Cash Out</button>
-                        <button class="btn">Pay Bill</button>
+                        <button id="toggle-transaction-form" class="btn">Transaction</button>
                     </div>
                       
 
                       <!-- Add money -->
-                      <div class="hidden" id="add-money-form">
+                      <div class="" id="add-money-form">
                         <div class="hero bg-base-200 mt-10">
                             <div class="hero-content">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -68,7 +68,7 @@
 
                       <!-- Cash out -->
                        <!-- by default we will alway see the Add money form and not the cash out, that's why I amm adding hidden in cash out div. -->
-                      <div class="" id="cash-out-form"> 
+                      <div class="hidden" id="cash-out-form"> 
                         <div class="hero bg-base-200 mt-10">
                             <div class="hero-content">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -86,6 +86,31 @@
                           </div>
                       </div>
                       <!-- Cash out End -->
+
+                       <!-- Transaction -->
+                       <div class="hidden" id="transaction-form">
+                        <div class="hero bg-base-200 mt-10">
+                            <div class="hero-content">
+                              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <div class="card-body">
+                                  <fieldset class="fieldset">
+
+
+                                    <div id="transaction-history-box" class="">
+
+                                    </div>
+                                  <!--   <label class="label">Amount</label>
+                                    <input type="text" class="input" placeholder="Amount" id="transaction-input"/>
+                                    <label class="label">Pin</label>
+                                    <input type="password" class="input" placeholder="Pin 1111" id="transaction-pin-input"/>
+                                    <button class="btn btn-neutral mt-4" id="transaction-btn">Transaction</button>  -->
+                                  </fieldset>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- End add money -->
                           
                     </div>
                   </div>
@@ -101,5 +126,6 @@
     <script src="js/utilities.js"></script> 
      <script src="js/addMoney.js"></script>
      <script src="js/cashOut.js"></script>
+     <script src="js/features.js"></script>
 </body>
 </html>

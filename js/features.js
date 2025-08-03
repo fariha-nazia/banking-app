@@ -13,6 +13,22 @@
 
 // =======================================================================================================================
 // =======================================================================================================================
+// for add money btn and section show
+document.getElementById('toggle-add-money-form').addEventListener('click', function(){
+
+    console.log('feature add');
+    showSectionById('add-money-form');
+});
+
+// for cash out btn and section show
+document.getElementById('toggle-cash-out-form').addEventListener('click', function(){
+    showSectionById('cash-out-form');
+});
+
+// for transaction btn and section show
+document.getElementById('toggle-transaction-form').addEventListener('click', function(){
+    showSectionById('transaction-form');
+});
 
 
 
