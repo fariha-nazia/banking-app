@@ -24,7 +24,7 @@
 
         // step 5 
         // if login is correct than go to a new page.
-        window.location.href = 'banking-app/home.html'; 
+        window.location.href = 'https://fariha-nazia.github.io/banking-app/home.html'; 
     }
     else{
     alert('Please type Phone No. 4991 and Pin No. 1111');
